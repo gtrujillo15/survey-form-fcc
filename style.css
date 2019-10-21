@@ -1,3 +1,19 @@
+body {
+    background-color: pink;
+}
+
+header {
+    text-align: center;
+}
+
 .inputfield {
     border-radius: 5%;
+}
+
+#surveyform {
+    background-color: white;
+}
+
+.hello {
+    background-color: white;
 }
