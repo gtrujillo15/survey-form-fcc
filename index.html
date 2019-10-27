@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +14,8 @@
 <body>
     <header>
         <h1 id="title">Favorite Tacos</h1>
-        <p id="description">We're currently collecting information about people's favorite tacos and we want to hear from you! Please fill out the information below.</p>
+        <p id="description">We're currently collecting information about people's favorite tacos and we want to hear
+            from you! Please fill out the information below.</p>
     </header>
     <main>
         <form action="" id="survey-form" lass="hello">
@@ -20,17 +23,17 @@
             <div>
                 <label id="name-label" for="name">
                     <h3>Name:</h3>
-                </label><input type="text" class="inputfield" placeholder="Name" id="name"></div>
+                </label><input type="text" class="inputfield" placeholder="Name" id="name" required></div>
 
             <div>
                 <label id="email-label" for="email">
                     <h3>Email:</h3>
-                </label><input type="text" class="inputfield" placeholder="Email" id="email"></div>
+                </label><input type="email" class="inputfield" placeholder="Email" id="email" required></div>
 
             <div>
                 <label id="number-label" for="age">
                     <h3>Age:</h3>
-                </label><input type="number" class="inputfield" placeholder="age" id="age" min="13" max="120">
+                </label><input type="number" class="inputfield" placeholder="age" id="number" min="13" max="120">
             </div>
 
             <div>
@@ -42,14 +45,29 @@
             </div>
 
             <div>
-                <label id="tortilla" for="tortilla"><h3>Favorite Type of Tortilla:</h3>
-                <input type="radio" class="inputfield" placeholder="radio" name="tortillatype">Corn</label>
-                <input type="radio" class="inputfield" placeholder="radio" name="tortillatype">Flour</label>
+                <label id="tortilla" for="tortilla">
+                    <h3>Favorite Type of Tortilla:</h3>
+                    <input type="radio" class="inputfield" placeholder="radio" name="tortillatype" value="0">Corn
+                </label>
+                <input type="radio" class="inputfield" placeholder="radio" name="tortillatype" value="1">Flour</label>
+            </div>
+
+            <div>
+                <h3>Salsa</h3>
+                <label for="greensalsa">
+                    <input type="checkbox" value="greesalsa" name="greensalsa">Green Salsa
+                </label>
+                <label for="redsalsa">
+                    <input type="checkbox" value="redsalsa" name="redsalsa">Red Salsa
+                </label>
+                <label for="guac">
+                    <input type="checkbox" value="guacamole" name="guacamole">Guacamole
+                </label>
             </div>
 
             <div>
                 <h3>Have a favorite restaurant? Unique type of meat? Let us know!</h3>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
             </div>
 
             <button id="submit">Submit</button>
@@ -58,10 +76,3 @@
 </body>
 
 </html>
-
-<!-- still need 
-    6 = User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error.
-    8 = User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error
-    14 = Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute.
-
--->
